@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Symfony!</title>
+	</head>
+	<body>
+		<a href="/tournament">
+			<button>view whole tournament</button>
+		</a>
+		<table>
+			<thead>
+				<th>
+					paper plane model</th>
+				<th>
+					travelled distance</th>
+				<th>
+					flight duration</th>
+				<th>
+					participant name</th>
+				<th>
+					date</th>
+			</thead>
+			{% if number == 1 %}
+				<tr>
+					<td>slim</td>
+					<td>6miles</td>
+					<td>1min59s</td>
+					<td>mafogger</td>
+					<td>10.02.2021</td>
+				</tr>
+				<tr>
+					<td>
+						<b>thick</b>
+					</td>
+					<td>
+						<b>10miles</b>
+					</td>
+					<td>
+						<b>2min30s</b>
+					</td>
+					<td>
+						<b>twigger</b>
+					</td>
+					<td>
+						<b>20.02.2021</b>
+					</td>
+				</tr>
+				<tr>
+					<td>thick</td>
+					<td>5miles</td>
+					<td>2min15s</td>
+					<td>overkill</td>
+					<td>04.04.2021</td>
+				</tr>
+			{% endif %}
+			{% if number == 2 %}
+				<tr>
+					<td>slim</td>
+					<td>2miles</td>
+					<td>30s</td>
+					<td>mafogger</td>
+					<td>05.12.2021</td>
+				</tr>
+				<tr>
+					<td>
+						<b>thick</b>
+					</td>
+					<td>
+						<b>12</b>
+					</td>
+					<td>
+						<b>2min09s</b>
+					</td>
+					<td>
+						<b>twigger</b>
+					</td>
+					<td>
+						<b>08.08.2021</b>
+					</td>
+				</tr>
+				<tr>
+					<td>thick</td>
+					<td>6miles</td>
+					<td>1min40s</td>
+					<td>overkill</td>
+					<td>10.11.2021</td>
+				</tr>
+			{% endif %}
+			{% if number == 3 %}
+				<tr>
+					<td>
+						<b>slim</b>
+					</td>
+					<td>
+						<b>15miles</b>
+					</td>
+					<td>
+						<b>2min01s</b>
+					</td>
+					<td>
+						<b>symfonius</b>
+					</td>
+					<td>
+						<b>07.01.2021</b>
+					</td>
+				</tr>
+				<tr>
+					<td>thick</td>
+					<td>10miles</td>
+					<td>2min30s</td>
+					<td>twigger</td>
+					<td>11.11.2021</td>
+				</tr>
+				<tr>
+					<td>thick</td>
+					<td>5miles</td>
+					<td>2min15s</td>
+					<td>overkill</td>
+					<td>01.03.2021</td>
+				</tr>
+			{% endif %}
+		</table>
+
+	</body>
+</html>

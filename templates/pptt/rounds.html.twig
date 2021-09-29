@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tournament 1</title>
+	</head>
+	<body>
+		{{ name | trans }}
+		Hello world
+		<table>
+			<thead>
+				<th>
+					{% trans %}
+					Round Nr
+					{% endtrans %}
+				</th>
+				<th>
+					{% trans %}
+					Atenndents
+					{% endtrans %}
+				</th>
+				<th>
+					{% trans %}
+					Winner
+					{% endtrans %}
+				</th>
+				<th>
+					{% trans %}
+					Date
+					{% endtrans %}
+				</th>
+				<th>
+					{% trans %}
+					Time
+					{% endtrans %}
+				</th>
+			</thead>
+			<tr>
+				<td>
+					<a href="{{ path('round', {'number': 1}) }}">
+						1</a>
+				</td>
+				<td>5</td>
+				<td>twigger</td>
+				<td>01.09.2021</td>
+				<td>18:30</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="{{ path('round', {'number': 2}) }}">
+						2</a>
+				</td>
+				<td>15</td>
+				<td>twigger</td>
+				<td>10.03.2021</td>
+				<td>14:30</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="{{ path('round', {'number': 3}) }}">
+						3</a>
+				</td>
+				<td>9</td>
+				<td>symfonius</td>
+				<td>01.09.2021</td>
+				<td>20:30</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

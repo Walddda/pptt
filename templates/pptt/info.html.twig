@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Symfony!</title>
+	</head>
+	<body>
+		<h1>{{ name }}</h1>
+
+		<img src="{{ asset('logo.png') }}"/>
+
+		<table>
+			<thead>
+				<th>
+					paper plane model</th>
+				<th>
+					travelled distance</th>
+				<th>
+					flight duration</th>
+				<th>
+					participant name</th>
+				<th>
+					date</th>
+			</thead>
+			<tr>
+				<td>
+					<a href="{{ path('detail', {'number': 1}) }}">
+						slim</a>
+				</td>
+				<td>500miles</td>
+				<td>10min</td>
+				<td>mafogger</td>
+				<td>20.07.2021</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/results/2">thick</a>
+				</td>
+				<td>10miles</td>
+				<td>2h</td>
+				<td>twigger</td>
+				<td>21.07.2021</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/results/3">slim</a>
+				</td>
+				<td>1000000000000000000miles</td>
+				<td>1h</td>
+				<td>overkill</td>
+				<td>18.11.2021</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
