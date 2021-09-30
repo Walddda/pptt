@@ -11,11 +11,12 @@ use Symfony\Component\Translation\Loader\ArrayLoader;
 class PPTT extends AbstractController
 {
     /**
-     * @Route(
-     *     "/{_locale}",
-     *     name="homepage",
-     *     requirements={
-     *         "_locale": "en|fr|de",
+     * @Route({
+     *      "en": "results",
+     *      "de": "resultate"
+     *      }, name="homepage",
+     *      requirements={
+     *         "_locale": "en|de",
      *     }
      * )
      */
@@ -27,16 +28,13 @@ class PPTT extends AbstractController
     }
 
     /**
-     * @Route("/tournament/")
-     */
-    public function tournament(): Response
-    {
-        return $this->render('pptt/rounds.html.twig', []);
-    }
-
-
-    /**
-     * @Route("/round/{number}", name="round")
+     * @Route({
+     *     "en": "/round/{number}",
+     *     "de": "/runde/{number}"
+     *     }, name="round",
+     *     requirements={
+     *         "_locale": "en|de",
+     *     })
      */
     public function round(int $number): Response
     {
