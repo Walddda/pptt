@@ -13,7 +13,7 @@ const flightpath = {
     ]
 }
 function pageScroll() {
-    window.scrollBy(0,30);
+    window.scrollBy(0,50);
     if(document.documentElement.scrollTop  >= 6502){
 
     }else{
@@ -41,6 +41,6 @@ const scene = new ScrollMagic.Scene({
 })
 
 .setTween(tween)
-.addIndicators()
+// .addIndicators()
 .setPin('.animation')
 .addTo(controller)
